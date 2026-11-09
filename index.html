@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Idle Bakery</p>
+          <h1>Cookie Clicker</h1>
+        </div>
+        <button id="resetButton" class="secondary-button" type="button">Reset</button>
+      </header>
+
+      <main class="game-layout">
+        <section class="panel cookie-panel">
+          <div class="cookie-stats">
+            <div>
+              <p class="label">Cookies</p>
+              <h2 id="cookiesDisplay">0</h2>
+            </div>
+            <div>
+              <p class="label">Per second</p>
+              <h2 id="cpsDisplay">0</h2>
+            </div>
+          </div>
+
+          <button id="cookieButton" class="cookie-button" aria-label="Bake a cookie" type="button">
+            <span class="cookie-emoji">🍪</span>
+          </button>
+
+          <p class="click-power">+<span id="clickPowerDisplay">1</span> per click</p>
+        </section>
+
+        <aside class="panel shop-panel">
+          <h3>Upgrades</h3>
+          <div id="shopList" class="shop-list"></div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
